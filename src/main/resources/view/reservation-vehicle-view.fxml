@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ReservationVehiclesAnchorPane" prefHeight="720.0" prefWidth="1064.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.finalproject.controller.ReservationVehicleController">
+   <children>
+      <VBox layoutX="29.0" layoutY="30.0" prefHeight="720.0" prefWidth="1064.0" stylesheets="@../css/customer.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="1064.0">
+               <children>
+                  <Label fx:id="lblDate" prefHeight="30.0" prefWidth="309.0" text="Date" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="450.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="btnHistory" mnemonicParsing="false" onAction="#checkReservationHistory" prefHeight="30.0" prefWidth="108.0" text="History" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="150.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <AnchorPane fx:id="imageAnchorPane" prefHeight="664.0" prefWidth="1120.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

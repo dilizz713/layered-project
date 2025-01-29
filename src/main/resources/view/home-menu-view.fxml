@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homeMenuAnchorPane" prefHeight="720.0" prefWidth="1064.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse71.finalproject.controller.HomeMenuController">
+   <children>
+      <ImageView fitHeight="619.0" fitWidth="1064.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="128.12649536132812" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="129.0">
+         <image>
+            <Image url="@../assets/homemenu.jpeg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label45" layoutX="233.0" layoutY="32.0" text="AUTO RENT PRO" textFill="WHITE">
+         <font>
+            <Font size="68.0" />
+         </font>
+         <padding>
+            <Insets right="50.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>
