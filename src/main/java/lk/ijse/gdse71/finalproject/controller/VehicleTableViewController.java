@@ -250,10 +250,6 @@ public class VehicleTableViewController implements Initializable {
             });
 
             LocalDate registrationDate = null;
-            if (vehicleDTO.getRegistrationDate() != null) {
-                registrationDate = vehicleDTO.getRegistrationDate();
-            }
-
 
             VehicleTM vehicleTM = new VehicleTM(
                     vehicleDTO.getId(),

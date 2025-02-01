@@ -38,8 +38,7 @@ public class VehicleModel {
                           rst.getBytes(5),        // image
                           rst.getString(6),     // number plate
                           rst.getDouble(7),     //price
-                            rst.getDate(8).toLocalDate()     //date
-
+                          rst.getDate(8).toLocalDate()     //date
 
             );
             vehicleDTOS.add(vehicleDTO);
@@ -61,7 +60,8 @@ public class VehicleModel {
                     resultSet.getBytes("image"),
                     resultSet.getString("numberPlate"),
                     resultSet.getDouble("price"),
-                    resultSet.getDate("date").toLocalDate()
+                    resultSet.getDate("registrationDate").toLocalDate()
+
             );
             vehicles.add(vehicle);
         }
@@ -80,7 +80,6 @@ public class VehicleModel {
                 vehicleDTO.getNumberPlate(),
                 vehicleDTO.getPrice(),
                 vehicleDTO.getRegistrationDate()
-
 
         );
     }
@@ -117,7 +116,7 @@ public class VehicleModel {
                     rst.getString(4),     // vehicle type
                     rst.getBytes(5),        // image
                     rst.getString(6),     // number plate
-                    rst.getDouble(7),       //price
+                    rst.getDouble(7),      //price
                     rst.getDate(8).toLocalDate()      //date
 
 

@@ -295,7 +295,6 @@ public class VehicleController implements Initializable {
         cmbType.setValue(vehicleDTO.getVehicleType());
         txtNumberPlate.setText(vehicleDTO.getNumberPlate());
         txtPrice.setText(String.valueOf(vehicleDTO.getPrice()));
-        lblDate.setText(String.valueOf(vehicleDTO.getRegistrationDate()));
 
 
         if (vehicleDTO.getImage() != null) {
